@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
+    <title>Sofia Game</title>
+  </head>
+  
+  <body class="bg-color-2">
+
+    <header class="bg-color-3">
+
+      <ul class="horizontal-list menu">      
+
+          <li>
+            <a href="/"> 
+              Home
+            </a>
+          </li>
+
+          {% for page in site.pages %}
+          {% if page.title != nil %}
+          
+            <li> 
+              <a href="{{ page.url }}">{{ page.title }}</a>
+            </li>       
+          
+
+          {% endif %}
+          {% endfor %}
+          
+
+      </ul>
+    </header>
+    
+    <div class="container">
+      {%if page.title == nil%}
+        
+      {% else %}
+
+        <h1>{{ page.title }}</h1>
+
+      {% endif %}
+
+    </div>

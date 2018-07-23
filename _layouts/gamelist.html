@@ -1,0 +1,16 @@
+{% include header.html %}
+
+        <section class="gamelist">
+          <div class="container">
+            
+            {% for game in site.games %}
+              <a href="{{ game.url }}">{{ game.title }}</a>
+              <a href="{{ game.url }}"><img alt="Image for {{ game.title }}" src="{{ game.image }}" /></a>
+            {% endfor %}
+            
+          </div>    
+        </section>
+
+        {{ content }}
+
+{% include footer.html %}
