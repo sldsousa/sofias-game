@@ -1,11 +1,8 @@
 ---
 layout: default 
-title: "game 3"
+title: "Game 3"
 image: https://gpstatic.com/acache/33/17/1/de/t620x300-f2672575b79b63bd70ad0f6382153f1b.jpg
 ---
-
-#### The third game 
-
 ![alt text](http://sm.ign.com/t/ign_pt/feature/a/assassins-/assassins-creed-origins-all-gameplay-news-trailers_f1td.640.jpg "Logo Title Text 1")
 
 This game is m'y favorite.

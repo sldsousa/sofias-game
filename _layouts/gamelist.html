@@ -1,12 +1,36 @@
 {% include header.html %}
 
         <section class="gamelist">
-          <div class="container">
+          <div class="container--gamelist">
             
-            {% for game in site.games %}
-              <a href="{{ game.url }}">{{ game.title }}</a>
-              <a href="{{ game.url }}"><img alt="Image for {{ game.title }}" src="{{ game.image }}" /></a>
-            {% endfor %}
+            <div class="grid grid--gamelit">
+              <div class="grid__item">
+                <div class="box box--gamelist bg-color-1 w-1/3">
+                  <div class="box__img"  style="background: url('http://image.jeuxvideo.com/images-sm/wi/h/a/happy-hammerin-wii-010.jpg'); 
+                                                        background-position: center center; background-repeat: no-repeat; background-size: cover;" ></div>
+                  <h2>Tape Taupe</h2>
+                  <a href="http://127.0.0.1:4000/games/game1" class="button--game-list button--secondary">Résumé</a>
+                </div>
+              </div>
+
+              <div class="grid__item">
+                <div class="box box--gamelist bg-color-2 w-1/3">
+
+                  <div class="box__img"  style="background: url('http://www.apa.org/Images/sia-resources-eyewitness-title_tcm7-178733.jpg'); background-position: center center; background-repeat: no-repeat; background-size: cover;" ></div>
+                  <h2>Who's Charlie?</h2>
+                  <a href="http://127.0.0.1:4000/games/game2" class="button--game-list button--secondary">Résumé</a>
+                </div>
+              </div>
+
+              <div class="grid__item">
+                <div class="box box--gamelist bg-color-1 w-1/3">
+
+                  <div class="box__img"  style="background: url('https://cdn.areajugones.es/wp-content/uploads/2017/06/assassinsorigins-810x400.jpg'); background-position: center center; background-repeat: no-repeat; background-size: cover;" ></div>
+                  <h2>Game three</h2>
+                  <a href="http://127.0.0.1:4000/games/game3" class="button--game-list button--secondary">Résumé</a>
+                </div>
+              </div>
+            </div>
             
           </div>    
         </section>
@@ -14,3 +38,10 @@
         {{ content }}
 
 {% include footer.html %}
+
+<!-- 
+	{% for game in site.games %}
+    	<a href="{{ game.url }}">{{ game.title }}</a>
+    	<a href="{{ game.url }}"><img alt="Image for {{ game.title }}" src="{{ game.image }}" /></a>
+    {% endfor %}
+-->        

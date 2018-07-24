@@ -2,12 +2,12 @@
   border: 2px solid black;
   border-radius: 15px;
   color: black;
-  padding: 15px 20px;
-  text-align: center;
+  padding: 15px;
+  
   text-decoration: none;
   display: block;
   align-items: center;
-  width: 33.333%;
+  width: 34%;
   font-size: 24px;
   margin: 0px auto;
   cursor: pointer;
@@ -29,9 +29,24 @@
   }  
 }
 
+.button--game-list {
+  display: block;
+  width: 40%;
+  margin: auto;
+  padding: 20px 12px;
+  border: 2px solid black;
+  border-radius: 15px;
+  
+  color: black;
+  //background-color: #f5e1e1;
+  font-size: 24px;
+  align-items: center;
+  text-align: center;
+}
+
 .button--primary {
   background-color: #F2FAFC;
 }
 .button--secondary {
-  background-color: #F9F2F2;      
+  background-color: #f5e1e1;      
 }

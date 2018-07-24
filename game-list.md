@@ -1,6 +1,6 @@
 ---
 layout: gamelist
-title: "game list"
+title: "Game List"
 permalink: /gamelist/
 ---
 
